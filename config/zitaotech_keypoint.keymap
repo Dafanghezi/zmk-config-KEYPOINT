@@ -103,20 +103,20 @@
         raise_layer {
             display-name = "RAISE";
             bindings = <
-&kp ESC    &kp F1  &kp F2        &kp F3  &kp F10       &none  &LMouse_sc 0 MB1  &LMouse_sc 0 MB2  &none  &none             &none  &kp BACKSPACE
-&kp CAPS   &kp F4  &kp F5        &kp F6  &kp F11       &none  &none             &none             &none  &LMouse_sc 0 MB3  &none  &none          &none  &kp ENTER
-&kp LSHFT  &kp F7  &kp F8        &kp F9  &kp F12       &none  &none             &none             &none  &none             &none  &none          &none  &none      &none  &kp RIGHT_SHIFT
-&kp LCTRL  &none   &kp LEFT_GUI  &none   &kp LEFT_ALT  &none  &none             &none             &none  &kp LEFT_GUI      &none  &none          &none  &kp RCTRL
+&kp ESC    &kp F1  &kp F2        &kp F3  &kp F10       &none  &mkp MB1  &mkp MB2  &none  &none         &none  &kp BACKSPACE
+&kp CAPS   &kp F4  &kp F5        &kp F6  &kp F11       &none  &none     &none     &none  &mkp MB3      &none  &none          &none  &kp ENTER
+&kp LSHFT  &kp F7  &kp F8        &kp F9  &kp F12       &none  &none     &none     &none  &none         &none  &none          &none  &none      &none  &kp RIGHT_SHIFT
+&kp LCTRL  &none   &kp LEFT_GUI  &none   &kp LEFT_ALT  &none  &none     &none     &none  &kp LEFT_GUI  &none  &none          &none  &kp RCTRL
             >;
         };
 
         MOUSE_layer {
             display-name = "MOUSE";
             bindings = <
-&kp ESC    &none  &none         &none  &none         &none  &LMouse_sc 0 MB1  &LMouse_sc 0 MB2  &none     &none             &none  &kp BSPC
-&kp TAB    &none  &none         &none  &none         &none  &mkp LCLK         &mkp LCLK         &none     &LMouse_sc 0 MB3  &none  &none     &none  &kp ENTER
-&kp LSHFT  &none  &none         &none  &none         &none  &msc SCRL_DOWN    &msc SCRL_UP      &none     &none             &none  &none     &none  &none      &none  &kp RSHFT
-&kp LCTRL  &none  &kp LEFT_GUI  &none  &kp LEFT_ALT  &none  &none             &none             &tdRMCLK  &kp LEFT_GUI      &none  &none     &none  &kp RCTRL
+&kp ESC    &none  &none         &none  &none         &none  &mkp MB1        &mkp MB2      &none     &none         &none  &kp BSPC
+&kp TAB    &none  &none         &none  &none         &none  &mkp LCLK       &mkp LCLK     &none     &mkp MB3      &none  &none     &none  &kp ENTER
+&kp LSHFT  &none  &none         &none  &none         &none  &msc SCRL_DOWN  &msc SCRL_UP  &none     &none         &none  &none     &none  &none      &none  &kp RSHFT
+&kp LCTRL  &none  &kp LEFT_GUI  &none  &kp LEFT_ALT  &none  &none           &none         &tdRMCLK  &kp LEFT_GUI  &none  &none     &none  &kp RCTRL
             >;
         };
 
