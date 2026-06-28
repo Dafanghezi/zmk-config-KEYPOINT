@@ -81,7 +81,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&mkp MCLK'
+  - '&mkp MB3'
   - ''
   - ''
   - ''
@@ -116,7 +116,7 @@ layers:
   - ''
   - ''
   - RCTRL
-  MOUSE: [ESC, '', '', '', '', '', '&mkp MB1', '&mkp MB2', '', '', '', BSPC, TAB, '', '', '', '', '', '&mkp LCLK', '&mkp LCLK', '', '&mkp MCLK', '', '', '', ENTER,
+  MOUSE: [ESC, '', '', '', '', '', '&mkp MB1', '&mkp MB2', '', '', '', BSPC, TAB, '', '', '', '', '', '&mkp LCLK', '&mkp LCLK', '', '&mkp MB3', '', '', '', ENTER,
     LSHFT, '', '', '', '', '', '&msc SCRL_DOWN', '&msc SCRL_UP', '', '', '', '', '', '', '', RSHFT, LCTRL, '', LEFT GUI, '', LEFT ALT, '', '', '', '&tdRMCLK', LEFT
       GUI, '', '', '', RCTRL]
   RESERVE: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
