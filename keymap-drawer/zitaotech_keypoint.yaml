@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: zitaotech_keypoint}
 layers:
-  QWERTY: [ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, '&mkp LCLK', '&mkp LCLK', H, J, K, L, ;, ENTER, LSHFT, Z, X, C, V, B, PG DN, PG UP, HOME,
-    END, N, M, ',', ., /, RSHFT, LCTRL, RAISE, LEFT GUI, MUTE, LEFT ALT, SPACE, LOWER, LOWER, RAISE, LEFT GUI, MUTE, '-', '=', RCTRL]
+  QWERTY: [ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, '&mkp LCLK', '&mkp LCLK', H, J, K, L, ;, ENTER, LSHFT, Z, X, C, V, B, PG DN, PG UP, Alt+LEFT
+      ARROW, Alt+RIGHT ARROW, N, M, ',', ., /, RSHFT, LCTRL, RAISE, LEFT GUI, MUTE, LEFT ALT, SPACE, LOWER, LOWER, RAISE, LEFT GUI, MUTE, '-', '=', RCTRL]
   LOWER:
   - '`'
   - '1'
