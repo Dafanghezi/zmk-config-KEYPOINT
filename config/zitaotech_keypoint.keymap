@@ -91,10 +91,10 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&kp GRAVE       &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F10 N          &kp M  &mkp MB1   &mkp MB2   &none       &none         &none         &kp DEL
-&kp CAPS        &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F11 BACKSPACE  &none  &mkp RCLK  &mkp RCLK  &none       &mkp MB3      &none         &none    &kp SQT   &kp ENTER
-&kp LEFT_SHIFT  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F12 NUMBER_0   &none  &kp HOME   &kp END    &bl BL_DEC  &bl BL_INC    &none         &none    &kp LBKT  &kp RBKT   &kp BACKSLASH  &kp RIGHT_SHIFT
-&kp LCTRL       &none            &kp LEFT_GUI     &bt BT_CLR       &kp LEFT_ALT       &none  &none      &none      &none       &kp LEFT_GUI  &out OUT_TOG  &none    &none     &kp RCTRL
+&kp GRAVE       &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F10 N         &kp M    &mkp MB1   &mkp MB2   &none       &none         &none         &kp DEL
+&kp CAPS        &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp BACKSPACE     &kp F11  &mkp RCLK  &mkp RCLK  &none       &mkp MB3      &none         &none    &kp SQT   &kp ENTER
+&kp LEFT_SHIFT  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F12 NUMBER_0  &none    &kp HOME   &kp END    &bl BL_DEC  &bl BL_INC    &none         &none    &kp LBKT  &kp RBKT   &kp BACKSLASH  &kp RIGHT_SHIFT
+&kp LCTRL       &none            &kp LEFT_GUI     &bt BT_CLR       &kp LEFT_ALT      &none    &none      &none      &none       &kp LEFT_GUI  &out OUT_TOG  &none    &none     &kp RCTRL
             >;
 
             sensor-bindings = <&BLE_encoder &inc_dec_kp UP DOWN>;
