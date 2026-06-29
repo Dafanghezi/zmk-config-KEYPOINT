@@ -64,9 +64,9 @@ layers:
   - {t: '3', h: F3}
   - N
   - M
-  - '&mkp MB1'
   - '&mkp MB2'
   - ''
+  - UP ARROW
   - ''
   - ''
   - DEL
@@ -78,10 +78,10 @@ layers:
   - F12
   - '&mkp RCLK'
   - '&mkp RCLK'
-  - ''
-  - '&mkp MB3'
-  - ''
-  - ''
+  - '&mkp MB1'
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
   - ''''
   - ENTER
   - LEFT SHIFT
@@ -94,7 +94,7 @@ layers:
   - END
   - '&bl BL_DEC'
   - '&bl BL_INC'
-  - ''
+  - '&mkp MB3'
   - ''
   - '['
   - ']'
@@ -121,9 +121,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
   - '&mkp MB2'
   - ''
+  - PAGE UP
   - ''
   - ''
   - BSPC
@@ -135,10 +135,10 @@ layers:
   - ''
   - '&mkp LCLK'
   - '&mkp LCLK'
-  - ''
-  - '&mkp MB3'
-  - ''
-  - ''
+  - '&mkp MB1'
+  - HOME
+  - PAGE DOWN
+  - END
   - ''
   - ENTER
   - LSHFT
@@ -151,7 +151,7 @@ layers:
   - '&msc SCRL_UP'
   - ''
   - ''
-  - ''
+  - '&mkp MB3'
   - ''
   - ''
   - ''
