@@ -25,8 +25,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: LOWER}
-  - {t: ENTER, h: MOUSE}
+  - {t: ;, h: MOUSE}
+  - ENTER
   - LSHFT
   - Z
   - X
@@ -52,7 +52,7 @@ layers:
   - LOWER
   - '&mkp MB1'
   - '&mkp MB2'
-  - '&mkp MB3'
+  - LOWER
   - MUTE
   - {t: '-', h: LEFT GUI}
   - '='
@@ -64,7 +64,7 @@ layers:
   - '3'
   - N
   - M
-  - '&mkp MB2'
+  - ''
   - ''
   - UP ARROW
   - ''
@@ -78,11 +78,11 @@ layers:
   - ''
   - '&mkp RCLK'
   - '&mkp RCLK'
-  - '&mkp MB1'
+  - '&mkp MB3'
   - LEFT
   - DOWN ARROW
   - RIGHT
-  - {t: '''', type: held}
+  - ''''
   - ENTER
   - LEFT SHIFT
   - '7'
@@ -94,7 +94,7 @@ layers:
   - END
   - '&bl BL_DEC'
   - '&bl BL_INC'
-  - '&mkp MB3'
+  - ''
   - ''
   - '['
   - ']'
@@ -106,7 +106,7 @@ layers:
   - BT CLR
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -139,8 +139,8 @@ layers:
   - HOME
   - PAGE DOWN
   - END
-  - ''
-  - {t: ENTER, type: held}
+  - {type: held}
+  - ENTER
   - LSHFT
   - F7
   - F8
