@@ -117,7 +117,7 @@ static int special_key_listener_cb(const zmk_event_t *eh) {
     }
 
     // Scroll key (Space)
-    if (ev->position == 48) {
+    if (ev->position == 48 || ev->position == 49) {
         scroll_key_pressed = ev->state;
         LOG_INF("space position=49 %s", scroll_key_pressed ? "PRESSED" : "RELEASED");
     }
