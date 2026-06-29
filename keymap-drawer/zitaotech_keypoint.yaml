@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: zitaotech_keypoint}
 layers:
   QWERTY: [ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, '&mkp LCLK', '&mkp LCLK', H, J, K, L, ;, ENTER, LSHFT, Z, X, C, V, B, PG DN, PG UP, Alt+LEFT
-      ARROW, Alt+RIGHT ARROW, N, M, ',', ., /, RSHFT, LCTRL, RAISE, LEFT GUI, MUTE, LEFT ALT, SPACE, LOWER, LOWER, RAISE, LEFT GUI, MUTE, '-', '=', RCTRL]
+      ARROW, Alt+RIGHT ARROW, N, M, ',', ., /, RSHFT, LCTRL, RAISE, LEFT GUI, MUTE, LEFT ALT, SPACE, LOWER, LOWER, MOUSE, LEFT GUI, MUTE, '-', '=', RCTRL]
   LOWER:
   - '`'
   - {t: '1', h: F1}
   - {t: '2', h: F2}
   - {t: '3', h: F3}
-  - {t: N, h: F10}
+  - N
   - M
   - '&mkp MB1'
   - '&mkp MB2'
@@ -20,7 +20,7 @@ layers:
   - {t: '5', h: F5}
   - {t: '6', h: F6}
   - BACKSPACE
-  - F11
+  - F12
   - '&mkp RCLK'
   - '&mkp RCLK'
   - ''
@@ -33,8 +33,8 @@ layers:
   - {t: '7', h: F7}
   - {t: '8', h: F8}
   - {t: '9', h: F9}
-  - {t: '0', h: F12}
-  - ''
+  - F10
+  - F11
   - HOME
   - END
   - '&bl BL_DEC'
@@ -56,6 +56,63 @@ layers:
   - ''
   - LEFT GUI
   - OUT TOG
+  - ''
+  - ''
+  - RCTRL
+  MOUSE:
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - ''
+  - ''
+  - ''
+  - BSPC
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - '&mkp LCLK'
+  - '&mkp LCLK'
+  - ''
+  - '&mkp MB3'
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RSHFT
+  - LCTRL
+  - ''
+  - LEFT GUI
+  - ''
+  - LEFT ALT
+  - ''
+  - LOWER
+  - ''
+  - {type: held}
+  - LEFT GUI
+  - ''
   - ''
   - ''
   - RCTRL
@@ -116,8 +173,5 @@ layers:
   - ''
   - ''
   - RCTRL
-  MOUSE: [ESC, '', '', '', '', '', '&mkp MB1', '&mkp MB2', '', '', '', BSPC, TAB, '', '', '', '', '', '&mkp LCLK', '&mkp LCLK', '', '&mkp MB3', '', '', '', ENTER,
-    LSHFT, '', '', '', '', '', '&msc SCRL_DOWN', '&msc SCRL_UP', '', '', '', '', '', '', '', RSHFT, LCTRL, '', LEFT GUI, '', LEFT ALT, '', LOWER, '', '', LEFT GUI,
-    '', '', '', RCTRL]
   RESERVE: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
