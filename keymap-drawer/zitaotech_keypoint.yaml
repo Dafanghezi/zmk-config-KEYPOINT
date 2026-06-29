@@ -25,7 +25,7 @@ layers:
   - J
   - K
   - L
-  - ;
+  - {t: ;, h: MOUSE}
   - ENTER
   - LSHFT
   - Z
@@ -44,8 +44,8 @@ layers:
   - /
   - RSHFT
   - LCTRL
-  - ''
   - LEFT GUI
+  - MOUSE
   - MUTE
   - LEFT ALT
   - SPACE
@@ -54,14 +54,14 @@ layers:
   - '&mkp MB2'
   - LOWER
   - MUTE
-  - {t: '-', h: Ctl+LEFT GUI}
+  - {t: '-', h: LEFT GUI}
   - '='
   - RCTRL
   LOWER:
   - '`'
-  - {t: '1', h: F1}
-  - {t: '2', h: F2}
-  - {t: '3', h: F3}
+  - '1'
+  - '2'
+  - '3'
   - N
   - M
   - '&mkp MB2'
@@ -71,11 +71,11 @@ layers:
   - ''
   - DEL
   - CAPS
-  - {t: '4', h: F4}
-  - {t: '5', h: F5}
-  - {t: '6', h: F6}
+  - '4'
+  - '5'
+  - '6'
   - BACKSPACE
-  - F12
+  - ''
   - '&mkp RCLK'
   - '&mkp RCLK'
   - '&mkp MB1'
@@ -85,11 +85,11 @@ layers:
   - ''''
   - ENTER
   - LEFT SHIFT
-  - {t: '7', h: F7}
-  - {t: '8', h: F8}
-  - {t: '9', h: F9}
-  - {t: '0', h: F10}
-  - F11
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
   - HOME
   - END
   - '&bl BL_DEC'
@@ -101,8 +101,8 @@ layers:
   - \
   - RIGHT SHIFT
   - LCTRL
-  - ''
   - LEFT GUI
+  - MOUSE
   - BT CLR
   - ''
   - ''
@@ -116,11 +116,11 @@ layers:
   - RCTRL
   MOUSE:
   - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
   - '&mkp MB2'
   - ''
   - PAGE UP
@@ -128,10 +128,10 @@ layers:
   - ''
   - BSPC
   - TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
+  - F11
   - ''
   - '&mkp LCLK'
   - '&mkp LCLK'
@@ -139,13 +139,13 @@ layers:
   - HOME
   - PAGE DOWN
   - END
-  - ''
+  - {type: held}
   - ENTER
   - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F12
   - ''
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
@@ -158,8 +158,8 @@ layers:
   - ''
   - RSHFT
   - LCTRL
-  - ''
   - LEFT GUI
+  - ''
   - ''
   - ''
   - ''
