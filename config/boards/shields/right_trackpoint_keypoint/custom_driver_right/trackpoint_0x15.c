@@ -51,11 +51,11 @@ static struct k_work_q tp_workq;
 #define SCROLL_DIVISOR_SLOW CONFIG_TRACKPOINT_SCROLL_DIVISOR_SLOW
 #define SCROLL_DIVISOR_FAST CONFIG_TRACKPOINT_SCROLL_DIVISOR_FAST
 
-// ---  key threshold / divisor ---
-#define _DEADZONE CONFIG_TRACKPOINT_SCROLL_DEADZONE
-#define _INPUT_MAX 256
-#define _DIVISOR_SLOW CONFIG_TRACKPOINT_SCROLL_DIVISOR_SLOW
-#define _DIVISOR_FAST CONFIG_TRACKPOINT_SCROLL_DIVISOR_FAST
+// --- Arrow key threshold / divisor ---
+#define ARROW_DEADZONE CONFIG_TRACKPOINT_SCROLL_DEADZONE
+#define ARROW_INPUT_MAX 256
+#define ARROW_DIVISOR_SLOW CONFIG_TRACKPOINT_SCROLL_DIVISOR_SLOW
+#define ARROW_DIVISOR_FAST CONFIG_TRACKPOINT_SCROLL_DIVISOR_FAST
 
 #define DOMINANT_NUMERATOR CONFIG_TRACKPOINT_DOMINANT_NUMERATOR
 #define DOMINANT_DENOMINATOR CONFIG_TRACKPOINT_DOMINANT_DENOMINATOR
@@ -85,10 +85,10 @@ static uint32_t last_activity_time = 0;
 #define TRACKPOINT_WDT_TIMEOUT 200
 /* ========= 全局状态 ========= */
 static bool scroll_key_pressed = false;
-static bool _key_pressed = false;
+static bool arrow_key_pressed = false;
 static bool slow_key_pressed = false;
 static bool last_scroll_key_pressed = false; // ★ NEW
-static bool last__key_pressed = false;
+static bool last_arrow_key_pressed = false;
 uint32_t last_packet_time = 0;
 
 /* ==== HID indicators ==== */
@@ -114,8 +114,8 @@ static int special_key_listener_cb(const zmk_event_t *eh) {
     if (!ev)
         return 0;
     if (ev->position == 20) {
-        _key_pressed = ev->state;
-        LOG_INF("space position=49 %s", _key_pressed ? "PRESSED" : "RELEASED");
+        arrow_key_pressed = ev->state;
+        LOG_INF("space position=49 %s", arrow_key_pressed ? "PRESSED" : "RELEASED");
     }
 
     // Scroll key (Space)
@@ -148,7 +148,7 @@ struct trackpoint_data {
     uint32_t last_packet_time;
     int16_t scroll_residue_x;
     int16_t scroll_residue_y;
-    int16_t _residue_x;
+    int16_t arrow_residue_x;
     int16_t arrow_residue_y;
 };
 
@@ -303,6 +303,8 @@ static void trackpoint_work_cb(struct k_work *work) {
     bool just_enter_scroll = scroll_key_pressed && !last_scroll_key_pressed;
     bool just_enter_arrow = arrow_key_pressed && !last_arrow_key_pressed;
     bool capslock = current_indicators & HID_INDICATORS_CAPS_LOCK;
+
+   if (scroll_key_pressed) {
 
         if (just_enter_scroll) {
             data->scroll_residue_x = dx * SCROLL_X_DIR;
