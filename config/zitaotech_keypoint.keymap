@@ -91,10 +91,10 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N         &kp M  &none      &none      &none       &none         &none         &kp DEL
-&kp CAPS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none         &none  &mkp RCLK  &mkp RCLK  &none       &none         &none         &none    &kp SQT   &kp ENTER
-&kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none  &kp HOME   &kp END    &bl BL_DEC  &bl BL_INC    &none         &none    &kp LBKT  &kp RBKT   &kp BACKSLASH  &kp RIGHT_SHIFT
-&kp LCTRL       &none         &kp LEFT_GUI  &bt BT_CLR    &kp LEFT_ALT  &none  &none      &none      &none       &kp LEFT_GUI  &out OUT_TOG  &none    &none     &kp RCTRL
+&kp GRAVE       &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F10 N          &kp M  &none      &none      &none       &none         &none         &kp DEL
+&kp CAPS        &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F11 BACKSPACE  &none  &mkp RCLK  &mkp RCLK  &none       &none         &none         &none    &kp SQT   &kp ENTER
+&kp LEFT_SHIFT  &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F12 NUMBER_0   &none  &kp HOME   &kp END    &bl BL_DEC  &bl BL_INC    &none         &none    &kp LBKT  &kp RBKT   &kp BACKSLASH  &kp RIGHT_SHIFT
+&kp LCTRL       &none            &kp LEFT_GUI     &bt BT_CLR       &kp LEFT_ALT       &none  &none      &none      &none       &kp LEFT_GUI  &out OUT_TOG  &none    &none     &kp RCTRL
             >;
 
             sensor-bindings = <&BLE_encoder &inc_dec_kp UP DOWN>;
@@ -103,20 +103,20 @@
         raise_layer {
             display-name = "RAISE";
             bindings = <
-&kp ESC    &kp F1  &kp F2        &kp F3  &kp F10       &none  &mkp MB1  &mkp MB2  &none  &none         &none  &kp BACKSPACE
-&kp CAPS   &kp F4  &kp F5        &kp F6  &kp F11       &none  &none     &none     &none  &mkp MB3      &none  &none          &none  &kp ENTER
-&kp LSHFT  &kp F7  &kp F8        &kp F9  &kp F12       &none  &none     &none     &none  &none         &none  &none          &none  &none      &none  &kp RIGHT_SHIFT
-&kp LCTRL  &none   &kp LEFT_GUI  &none   &kp LEFT_ALT  &none  &none     &none     &none  &kp LEFT_GUI  &none  &none          &none  &kp RCTRL
+&kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none         &none  &mkp MB1  &mkp MB2  &none  &none         &none  &kp BACKSPACE
+&kp TAB    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none         &none  &none     &none     &none  &mkp MB3      &none  &none          &none  &kp ENTER
+&kp LSHFT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none  &none     &none     &none  &none         &none  &none          &none  &none      &none  &kp RIGHT_SHIFT
+&kp LCTRL  &none         &kp LEFT_GUI  &none         &kp LEFT_ALT  &none  &none     &none     &none  &kp LEFT_GUI  &none  &none          &none  &kp RCTRL
             >;
         };
 
         MOUSE_layer {
             display-name = "MOUSE";
             bindings = <
-&kp ESC    &none  &none         &none  &none         &none  &mkp MB1        &mkp MB2      &none  &none         &none  &kp BSPC
-&kp TAB    &none  &none         &none  &none         &none  &mkp LCLK       &mkp LCLK     &none  &mkp MB3      &none  &none     &none  &kp ENTER
-&kp LSHFT  &none  &none         &none  &none         &none  &msc SCRL_DOWN  &msc SCRL_UP  &none  &none         &none  &none     &none  &none      &none  &kp RSHFT
-&kp LCTRL  &none  &kp LEFT_GUI  &none  &kp LEFT_ALT  &none  &none           &none         &none  &kp LEFT_GUI  &none  &none     &none  &kp RCTRL
+&kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none         &none  &mkp MB1        &mkp MB2      &none  &none         &none  &kp BSPC
+&kp TAB    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none         &none  &mkp LCLK       &mkp LCLK     &none  &mkp MB3      &none  &none     &none  &kp ENTER
+&kp LSHFT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none  &msc SCRL_DOWN  &msc SCRL_UP  &none  &none         &none  &none     &none  &none      &none  &kp RSHFT
+&kp LCTRL  &none         &kp LEFT_GUI  &none         &kp LEFT_ALT  &none  &none           &none         &none  &kp LEFT_GUI  &none  &none     &none  &kp RCTRL
             >;
         };
 
