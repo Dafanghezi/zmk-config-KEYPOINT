@@ -19,8 +19,8 @@ layers:
   - {t: '4', h: F4}
   - {t: '5', h: F5}
   - {t: '6', h: F6}
-  - {t: BACKSPACE, h: F11}
-  - ''
+  - BACKSPACE
+  - F11
   - '&mkp RCLK'
   - '&mkp RCLK'
   - ''
