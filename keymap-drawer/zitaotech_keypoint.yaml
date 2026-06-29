@@ -54,8 +54,8 @@ layers:
   - '&mkp MB2'
   - LOWER
   - MUTE
-  - {t: '-', h: LEFT GUI}
-  - '='
+  - '-'
+  - {t: LEFT GUI, h: '='}
   - RCTRL
   LOWER:
   - '`'
