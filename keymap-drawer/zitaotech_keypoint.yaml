@@ -44,15 +44,15 @@ layers:
   - /
   - RSHFT
   - LCTRL
-  - RAISE
+  - ''
   - LEFT GUI
   - MUTE
   - LEFT ALT
   - SPACE
   - LOWER
-  - LOWER
   - '&mkp MB1'
   - '&mkp MB2'
+  - LOWER
   - MUTE
   - {t: '-', h: Ctl+LEFT GUI}
   - '='
@@ -104,12 +104,12 @@ layers:
   - ''
   - LEFT GUI
   - BT CLR
-  - LEFT ALT
+  - ''
   - ''
   - {type: held}
   - ''
   - ''
-  - LEFT GUI
+  - ''
   - OUT TOG
   - ''
   - ''
@@ -161,73 +161,18 @@ layers:
   - ''
   - LEFT GUI
   - ''
-  - LEFT ALT
-  - ''
-  - LOWER
   - ''
   - ''
-  - LEFT GUI
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - RCTRL
-  RAISE:
-  - ESC
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BACKSPACE
-  - TAB
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ENTER
-  - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RIGHT SHIFT
-  - LCTRL
-  - {type: held}
-  - LEFT GUI
-  - ''
-  - LEFT ALT
-  - ''
-  - ''
-  - ''
-  - ''
-  - LEFT GUI
-  - ''
-  - ''
-  - ''
-  - RCTRL
+  RAISE: [ESC, '', '', '', '', '', '', '', '', '', '', BACKSPACE, TAB, '', '', '', '', '', '', '', '', '', '', '', '', ENTER, LSHFT, '', '', '', '', '', '', '', '',
+    '', '', '', '', '', '', RIGHT SHIFT, LCTRL, '', LEFT GUI, '', LEFT ALT, '', '', '', '', LEFT GUI, '', '', '', RCTRL]
   RESERVE:
   - ''
   - ''
