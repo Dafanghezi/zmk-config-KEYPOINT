@@ -108,16 +108,16 @@ ZMK_SUBSCRIPTION(a320_hid_listener, zmk_hid_indicators_changed);
 
 /* ========= Space + Slow Key listener ========= */
 static int special_key_listener_cb(const zmk_event_t *eh) {
-    const struct zmk__state_changed *ev = as_zmk__state_changed(eh);
+    const struct zmk_position_state_changed *ev = as_zmk_position_state_changed(eh);
     if (!ev)
         return 0;
-    if (ev-> == 20) {
+    if (ev->position == 20) {
         arrow_key_pressed = ev->state;
-        LOG_INF("space =49 %s", arrow_key_pressed ? "PRESSED" : "RELEASED");
+        LOG_INF("space position=49 %s", arrow_key_pressed ? "PRESSED" : "RELEASED");
     }
 
     // Scroll key (Space)
-    if (ev->position == 48 || ev->position == 49) {
+    if (ev->position == 48) {
         scroll_key_pressed = ev->state;
         LOG_INF("space position=49 %s", scroll_key_pressed ? "PRESSED" : "RELEASED");
     }
