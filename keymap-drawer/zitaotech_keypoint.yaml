@@ -52,7 +52,7 @@ layers:
   - LOWER
   - '&mkp MB1'
   - '&mkp MB2'
-  - LOWER
+  - '&mkp MB3'
   - MUTE
   - {t: '-', h: LEFT GUI}
   - '='
