@@ -43,7 +43,7 @@ layers:
   - .
   - /
   - RSHFT
-  - LCTRL
+  - {t: ENTER, h: LCTRL}
   - LEFT GUI
   - MOUSE
   - MUTE
@@ -55,27 +55,27 @@ layers:
   - LOWER
   - MUTE
   - '-'
-  - {t: LEFT GUI, h: '='}
-  - RCTRL
+  - '='
+  - {t: LEFT GUI, h: RCTRL}
   LOWER:
   - '`'
   - '1'
   - '2'
   - '3'
-  - N
-  - M
+  - '-'
+  - '='
   - ''
   - ''
   - UP ARROW
   - ''
-  - ''
+  - Alt+F4
   - DEL
   - CAPS
   - '4'
   - '5'
   - '6'
   - BACKSPACE
-  - ''
+  - ','
   - '&mkp RCLK'
   - '&mkp RCLK'
   - '&mkp MB3'
@@ -89,18 +89,18 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ''
+  - .
   - HOME
   - END
   - '&bl BL_DEC'
   - '&bl BL_INC'
-  - ''
+  - Ctl+Sft+N
   - ''
   - '['
   - ']'
   - \
   - RIGHT SHIFT
-  - LCTRL
+  - {t: ENTER, h: MOUSE}
   - LEFT GUI
   - MOUSE
   - BT CLR
@@ -115,11 +115,11 @@ layers:
   - ''
   - RCTRL
   MOUSE:
-  - ESC
-  - F1
+  - Alt+F4
+  - ''
   - F2
-  - F3
-  - F10
+  - ''
+  - ''
   - ''
   - '&mkp MB2'
   - ''
@@ -128,10 +128,10 @@ layers:
   - ''
   - BSPC
   - TAB
-  - F4
+  - ''
   - F5
-  - F6
-  - F11
+  - ''
+  - ''
   - ''
   - '&mkp LCLK'
   - '&mkp LCLK'
@@ -142,10 +142,10 @@ layers:
   - {type: held}
   - ENTER
   - LSHFT
-  - F7
-  - F8
-  - F9
-  - F12
+  - ''
+  - ''
+  - '['
+  - ']'
   - ''
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
