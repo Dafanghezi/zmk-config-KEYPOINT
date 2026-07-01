@@ -79,22 +79,24 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC    &kp Q         &kp W  &kp E       &kp R         &kp T      &kp Y      &kp U      &kp I               &kp O                &kp P       &kp BSPC
-&kp TAB    &kp A         &kp S  &kp D       &kp F         &kp G      &mkp LCLK  &mkp LCLK  &kp H               &kp J                &kp K       &kp L      &lt 2 SEMI          &kp ENTER
-&kp LSHFT  &kp Z         &kp X  &kp C       &kp V         &kp B      &kp PG_DN  &kp PG_UP  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp N       &kp M      &kp COMMA           &kp DOT    &kp FSLH  &kp RSHFT
-&kp LCTRL  &kp LEFT_GUI  &mo 2  &kp C_MUTE  &kp LEFT_ALT  &kp SPACE  &mo 1      &mkp MB1   &mkp MB2            &mo 1                &kp C_MUTE  &kp MINUS  &mt EQUAL LEFT_GUI  &kp RCTRL
+&kp ESC          &kp Q         &kp W  &kp E       &kp R         &kp T      &kp Y      &kp U      &kp I               &kp O                &kp P       &kp BSPC
+&kp TAB          &kp A         &kp S  &kp D       &kp F         &kp G      &mkp LCLK  &mkp LCLK  &kp H               &kp J                &kp K       &kp L      &lt 2 SEMI  &kp ENTER
+&kp LSHFT        &kp Z         &kp X  &kp C       &kp V         &kp B      &kp PG_DN  &kp PG_UP  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp N       &kp M      &kp COMMA   &kp DOT             &kp FSLH  &kp RSHFT
+&mt LCTRL ENTER  &kp LEFT_GUI  &mo 2  &kp C_MUTE  &kp LEFT_ALT  &kp SPACE  &mo 1      &mkp MB1   &mkp MB2            &mo 1                &kp C_MUTE  &kp MINUS  &kp EQUAL   &mt RCTRL LEFT_GUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT LEFT_ARROW>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N          &kp M  &none      &none      &kp UP_ARROW  &none       &none           &kp DEL
-&kp CAPS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSPACE  &none  &mkp RCLK  &mkp RCLK  &mkp MB3      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT  &kp SQT   &kp ENTER
-&kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &none  &kp HOME   &kp END    &bl BL_DEC    &bl BL_INC  &none           &none      &kp LBKT  &kp RBKT   &kp BACKSLASH  &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &mo 2         &bt BT_CLR    &none          &none  &none      &none      &none         &none       &out OUT_TOG    &none      &none     &kp RCTRL
+&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS      &kp EQUAL   &none      &none      &kp UP_ARROW  &none       &kp LA(F4)      &kp DEL
+&kp CAPS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp BACKSPACE  &kp COMMA   &mkp RCLK  &mkp RCLK  &mkp MB3      &kp LEFT    &kp DOWN_ARROW  &kp RIGHT  &kp SQT   &kp ENTER
+&kp LEFT_SHIFT  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &kp PERIOD  &kp HOME   &kp END    &bl BL_DEC    &bl BL_INC  &kp LC(LS(N))   &none      &kp LBKT  &kp RBKT   &kp BACKSLASH  &kp RIGHT_SHIFT
+&lt 2 ENTER     &kp LEFT_GUI  &mo 2         &bt BT_CLR    &none          &none       &none      &none      &none         &none       &out OUT_TOG    &none      &none     &kp RCTRL
             >;
 
             sensor-bindings = <&BLE_encoder &inc_dec_kp UP DOWN>;
@@ -103,10 +105,10 @@
         MOUSE_layer {
             display-name = "MOUSE";
             bindings = <
-&kp ESC    &kp F1        &kp F2  &kp F3  &kp F10  &none  &mkp MB2        &none         &kp PAGE_UP  &none     &none          &kp BSPC
-&kp TAB    &kp F4        &kp F5  &kp F6  &kp F11  &none  &mkp LCLK       &mkp LCLK     &mkp MB1     &kp HOME  &kp PAGE_DOWN  &kp END   &none  &kp ENTER
-&kp LSHFT  &kp F7        &kp F8  &kp F9  &kp F12  &none  &msc SCRL_DOWN  &msc SCRL_UP  &none        &none     &mkp MB3       &none     &none  &none      &none  &kp RSHFT
-&kp LCTRL  &kp LEFT_GUI  &none   &none   &none    &none  &none           &none         &none        &none     &none          &none     &none  &kp RCTRL
+&kp LA(F4)  &none         &kp F2  &none             &none              &none  &mkp MB2        &none         &kp PAGE_UP  &none     &none          &kp BSPC
+&kp TAB     &none         &kp F5  &none             &none              &none  &mkp LCLK       &mkp LCLK     &mkp MB1     &kp HOME  &kp PAGE_DOWN  &kp END   &none  &kp ENTER
+&kp LSHFT   &none         &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none  &msc SCRL_DOWN  &msc SCRL_UP  &none        &none     &mkp MB3       &none     &none  &none      &none  &kp RSHFT
+&kp LCTRL   &kp LEFT_GUI  &none   &none             &none              &none  &none           &none         &none        &none     &none          &none     &none  &kp RCTRL
             >;
         };
 
