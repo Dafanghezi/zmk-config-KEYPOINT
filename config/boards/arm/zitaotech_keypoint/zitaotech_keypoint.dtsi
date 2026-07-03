@@ -42,7 +42,7 @@ left_encoder: encoder_left {
         a-gpios = <&gpio0 14 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
 		resolution = <4>;
-        steps = <10>;
+        steps = <20>;
         status = "disabled";
      };
 
@@ -51,7 +51,7 @@ right_encoder: encoder_right {
         a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
         b-gpios = <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
 		resolution = <4>;
-        steps = <10>;
+        steps = <20>;
         status = "disabled";
      };
 
